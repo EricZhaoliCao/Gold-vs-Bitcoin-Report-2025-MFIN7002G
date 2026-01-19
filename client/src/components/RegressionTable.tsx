@@ -80,12 +80,149 @@ export function RegressionTable1() {
   );
 }
 
-export function RegressionTable2() {
+export function RegressionTable2Original() {
   return (
     <div className="w-full overflow-x-auto my-8">
       <table className="w-full border-collapse text-sm">
         <caption className="text-left text-gray-900 font-serif font-bold text-base mb-4 caption-top">
-          Table 2: EGARCH(1,1)-X Model Results – Volatility Asymmetry (Hypothesis 2)
+          Table 2A: EGARCH(1,1)-X Model Results – Bitcoin (2011–2015, N=1,768)
+        </caption>
+        <thead>
+          <tr>
+            <th className="border-t-2 border-b-2 border-gray-900 px-4 py-3 text-left font-semibold text-gray-900">Variables</th>
+            <th className="border-t-2 border-b-2 border-gray-900 px-4 py-3 text-center font-semibold text-gray-900">Mean Equation</th>
+            <th className="border-t-2 border-b-2 border-gray-900 px-4 py-3 text-center font-semibold text-gray-900">Variance Equation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Fed Funds Rate (t−1)</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">0.0988***</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.978***</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-1 text-gray-600 text-xs"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0338)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.230)</td>
+          </tr>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">USD–EUR FX (t−1)</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">0.0505***</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">1.813***</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-1 text-gray-600 text-xs"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0181)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.191)</td>
+          </tr>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">USD–GBP FX (t−1)</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.0844***</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-1.914***</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-1 text-gray-600 text-xs"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0300)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.287)</td>
+          </tr>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">FTSE Index (t−1)</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">9.21e-06**</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.000120***</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-1 text-gray-600 text-xs"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(3.66e-06)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(2.88e-05)</td>
+          </tr>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Gold Futures (t−1)</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">0.000160</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.00727***</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-1 text-gray-600 text-xs"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.000162)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.00209)</td>
+          </tr>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Gold Spot (t−1)</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.000143</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">0.00685***</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-1 text-gray-600 text-xs"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.000163)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.00211)</td>
+          </tr>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">AR(1)</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">0.100***</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">—</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-1 text-gray-600 text-xs"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0297)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono"></td>
+          </tr>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Shock Magnitude (α)</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">—</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">0.00776</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-1 text-gray-600 text-xs"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0154)</td>
+          </tr>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Asymmetry (γ)</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">—</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">0.545***</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-1 text-gray-600 text-xs"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0252)</td>
+          </tr>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Persistence (β)</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">—</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">0.834***</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-1 text-gray-600 text-xs"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.00982)</td>
+          </tr>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Constant</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.0233</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">1.203***</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-1 text-gray-600 text-xs"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0442)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.310)</td>
+          </tr>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Observations</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">1,768</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">1,768</td>
+          </tr>
+        </tbody>
+      </table>
+      <p className="text-xs text-gray-600 mt-2">Standard errors in parentheses. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.1</p>
+    </div>
+  );
+}
+
+export function RegressionTable2Recent() {
+  return (
+    <div className="w-full overflow-x-auto my-8">
+      <table className="w-full border-collapse text-sm">
+        <caption className="text-left text-gray-900 font-serif font-bold text-base mb-4 caption-top">
+          Table 2B: EGARCH(1,1)-X Model Results – Bitcoin & Gold (2015–2025, N=3,649)
         </caption>
         <thead>
           <tr>
@@ -201,4 +338,9 @@ export function RegressionTable2() {
       <p className="text-xs text-gray-600 mt-2">Standard errors in parentheses. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.1</p>
     </div>
   );
+}
+
+// Keep the original RegressionTable2 for backward compatibility, but it now shows the recent data
+export function RegressionTable2() {
+  return <RegressionTable2Recent />;
 }
