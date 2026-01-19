@@ -12,10 +12,17 @@ export default function Home() {
       .catch(err => console.error('Error loading report:', err));
   }, []);
 
-  return (
+    return (
     <div className="min-h-screen bg-white text-gray-900">
-      {/* Header */}
-      <header className="border-b border-gray-200 bg-white">
+      {/* Sticky Header Bar */}
+      <div className="fixed top-0 left-0 right-0 bg-gray-900 text-white py-2 px-6 z-50 shadow-md">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-sm font-semibold">MFIN7002G - Group 2</p>
+        </div>
+      </div>
+
+      {/* Main Header */}
+      <header className="border-b border-gray-200 bg-white mt-12">
         <div className="max-w-6xl mx-auto px-6 lg:px-8 py-20">
           <h1 className="text-6xl font-serif font-bold text-gray-900 mb-3 leading-tight">
             Gold vs. Bitcoin
