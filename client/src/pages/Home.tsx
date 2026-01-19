@@ -16,8 +16,16 @@ export default function Home() {
     <div className="min-h-screen bg-white text-gray-900">
       {/* Sticky Header Bar */}
       <div className="fixed top-0 left-0 right-0 bg-gray-900 text-white py-2 px-6 z-50 shadow-md">
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto flex items-center justify-between">
           <p className="text-sm font-semibold">MFIN7002G - Group 2</p>
+          <a 
+            href="https://github.com/EricZhaoliCao" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
+            @EricZhaoliCao
+          </a>
         </div>
       </div>
 
