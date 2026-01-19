@@ -85,7 +85,7 @@ export function RegressionTable2Original() {
     <div className="w-full overflow-x-auto my-8">
       <table className="w-full border-collapse text-sm">
         <caption className="text-left text-gray-900 font-serif font-bold text-base mb-4 caption-top">
-          Table 2A: EGARCH(1,1)-X Model Results – Bitcoin (2011–2015, N=1,768)
+          Table 2A: EGARCH(1,1) — Bitcoin (2011–2015, N=1,768)
         </caption>
         <thead>
           <tr>
@@ -222,7 +222,7 @@ export function RegressionTable2Recent() {
     <div className="w-full overflow-x-auto my-8">
       <table className="w-full border-collapse text-sm">
         <caption className="text-left text-gray-900 font-serif font-bold text-base mb-4 caption-top">
-          Table 2B: EGARCH(1,1)-X Model Results – Bitcoin & Gold (2015–2025, N=3,649)
+          Table 2B: EGARCH(1,1) — Bitcoin & Gold (2015–2025, N=3,649)
         </caption>
         <thead>
           <tr>
@@ -236,27 +236,17 @@ export function RegressionTable2Recent() {
             <td colSpan={3} className="border-b border-gray-300 px-4 py-2 text-gray-900">Mean Equation</td>
           </tr>
           <tr>
-            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">S&P 500 Return</td>
-            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">0.8534***</td>
-            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.0481**</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Lagged Return</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.0257</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.0505***</td>
           </tr>
           <tr>
             <td className="px-4 py-1 text-gray-600 text-xs"></td>
-            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.1189)</td>
-            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0221)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0238)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0169)</td>
           </tr>
           <tr>
-            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">USD Index Return</td>
-            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.4817**</td>
-            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.9741***</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-1 text-gray-600 text-xs"></td>
-            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.2022)</td>
-            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0488)</td>
-          </tr>
-          <tr>
-            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Federal Funds Rate Change</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Δ Fed Funds</td>
             <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-1.8310</td>
             <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-1.3486**</td>
           </tr>
@@ -266,14 +256,24 @@ export function RegressionTable2Recent() {
             <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.6165)</td>
           </tr>
           <tr>
-            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Lagged Own Return</td>
-            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.0257</td>
-            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.0505***</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">DXY Return</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.4817**</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.9741***</td>
           </tr>
           <tr>
             <td className="px-4 py-1 text-gray-600 text-xs"></td>
-            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0238)</td>
-            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0169)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.2022)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0488)</td>
+          </tr>
+          <tr>
+            <td className="border-b border-gray-300 px-4 py-2 text-gray-900">S&P 500 Return</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">0.8534***</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.0481**</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-1 text-gray-600 text-xs"></td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.1189)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0221)</td>
           </tr>
           <tr>
             <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Constant</td>
@@ -320,13 +320,13 @@ export function RegressionTable2Recent() {
           </tr>
           <tr>
             <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Constant</td>
-            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-13.5370***</td>
-            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">-0.1292***</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">0.0012*</td>
+            <td className="border-b border-gray-300 px-4 py-2 text-center text-gray-900 font-mono">0.0004***</td>
           </tr>
           <tr>
             <td className="px-4 py-1 text-gray-600 text-xs"></td>
-            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.1218)</td>
-            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0485)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0006)</td>
+            <td className="px-4 py-1 text-center text-gray-600 text-xs font-mono">(0.0001)</td>
           </tr>
           <tr>
             <td className="border-b border-gray-300 px-4 py-2 text-gray-900">Observations</td>
@@ -340,7 +340,7 @@ export function RegressionTable2Recent() {
   );
 }
 
-// Keep the original RegressionTable2 for backward compatibility, but it now shows the recent data
+// Keep the original RegressionTable2 for backward compatibility
 export function RegressionTable2() {
   return <RegressionTable2Recent />;
 }
