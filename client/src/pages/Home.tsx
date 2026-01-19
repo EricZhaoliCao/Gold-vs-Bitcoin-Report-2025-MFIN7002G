@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Streamdown } from 'streamdown';
-import { RegressionTable1, RegressionTable2 } from '@/components/RegressionTable';
+import { RegressionTable1, RegressionTable2Original, RegressionTable2Recent } from '@/components/RegressionTable';
 
 export default function Home() {
   const [report, setReport] = useState<string>('');
@@ -249,10 +249,21 @@ export default function Home() {
             </div>
           </div>
 
-          {/* H2 Regression Results */}
-          <div className="mt-20 pt-20 border-t border-gray-200">
+                    {/* H2 Regression Results */}
+                    <div className="mt-20 pt-20 border-t border-gray-200">
             <h3 className="text-2xl font-serif font-bold text-gray-900 mb-10">Regression Results</h3>
-            <RegressionTable2 />
+            
+            {/* Original Study (2011-2015) */}
+            <div className="mb-16">
+              <h4 className="text-xl font-serif font-bold text-gray-900 mb-8">Original Study Period (2011–2015)</h4>
+              <RegressionTable2Original />
+            </div>
+
+            {/* Recent Study (2015-2025) */}
+            <div className="mb-16">
+              <h4 className="text-xl font-serif font-bold text-gray-900 mb-8">Recent Study Period (2015–2025)</h4>
+              <RegressionTable2Recent />
+            </div>
 
             <div className="my-12 prose prose-lg max-w-none">
               <style>{`
